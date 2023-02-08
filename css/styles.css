@@ -11507,3 +11507,113 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+
+.timeline{
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.timeline .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 0px;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.timeline .trow{
+  display: flex;
+  margin: 50px;
+}
+.timeline .trow{
+  justify-content: start;
+}
+.timeline .trow section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(150% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.trow section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #3ea0e2;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 5%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.trow section .icon{
+  top: 40%;
+  right: 104%;
+}
+.trow section .details,
+.trow section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#3ea0e2;
+}
+.trow section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+  color: #3ea0e2;
+}
+.trow section p{
+  margin: 10px 0 17px 0;
+  color: #3ea0e2;
+}
+.trow section .bottom a{
+  text-decoration: none;
+  background: #3ea0e2;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.trow section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .timeline .center-line{
+    left: 40px;
+  }
+  .timeline .trow{
+    margin: 30px 0 3px 60px;
+  }
+  .timeline .trow section{
+    width: 100%;
+  }
+  .trow section::before{
+    left: -7px;
+  }
+  .trow section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .timeline .center-line,
+  .trow section::before,
+  .trow section .icon{
+    display: none;
+  }
+  .timeline .trow{
+    margin: 10px 0;
+  }
+}
