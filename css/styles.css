@@ -1383,6 +1383,15 @@ progress {
     width: 33.33333333%;
   }
 
+  .col-lg-4-icons {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
+    font-size: 6rem;
+    padding-left: 10px;
+;
+  }
+
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -11516,8 +11525,8 @@ html {
 }
 .timeline .center-line{
   position: absolute;
-  height: 100%;
-  width: 4px;
+  height: 95%;
+  width: 10px;
   background: #fff;
   left: 0px;
   top: 20px;
@@ -11541,15 +11550,15 @@ html {
 .trow section .icon,
 .center-line .scroll-icon{
   position: absolute;
-  background: #f2f2f2;
-  height: 30px;
-  width: 30px;
+  background: #fff;
+  height: 50px;
+  width: 50px;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #3ea0e2;
-  font-size: 17px;
-  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+  color: #000000;
+  font-size: 10%;
+  box-shadow: 0 0 0 4px rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)), inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 .center-line .scroll-icon{
   bottom: 0px;
@@ -11558,7 +11567,7 @@ html {
   transform: translateX(-50%);
 }
 .trow section .icon{
-  top: 40%;
+  top: 35%;
   right: 104%;
 }
 .trow section .details,
@@ -11566,21 +11575,21 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color:#3ea0e2;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
 }
 .trow section .details .title{
   font-size: 22px;
   font-weight: 600;
-  color: #3ea0e2;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
 }
 .trow section p{
   margin: 10px 0 17px 0;
-  color: #3ea0e2;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
 }
 .trow section .bottom a{
   text-decoration: none;
   background: #3ea0e2;
-  color: #fff;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
   padding: 7px 15px;
   border-radius: 5px;
   /* font-size: 17px; */
@@ -11590,6 +11599,7 @@ html {
 .trow section .bottom a:hover{
   transform: scale(0.97);
 }
+
 @media(max-width: 790px){
   .timeline .center-line{
     left: 40px;
@@ -11607,6 +11617,7 @@ html {
     left: -60px;
   }
 }
+
 @media(max-width: 440px){
   .timeline .center-line,
   .trow section::before,
@@ -11616,4 +11627,5 @@ html {
   .timeline .trow{
     margin: 10px 0;
   }
+
 }
